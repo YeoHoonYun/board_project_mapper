@@ -14,7 +14,7 @@ import java.util.List;
 public class MainController {
     CityService cityService;
 
-    @GetMapping(value = {"", "/", "main"})
+    @GetMapping(value = {"", "/", "/main"})
     public String main(Model model){
         List<City> cityList = cityService.getAllCity();
         model.addAttribute("cityList",cityList);
